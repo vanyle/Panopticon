@@ -9,4 +9,9 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('/targets')
+  listTargets(): string[] {
+    return ['target1', 'target2', 'orange juice'];
+  }
 }
